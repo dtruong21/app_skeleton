@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
     id 'kotlin-parcelize'
 }
 
@@ -141,4 +140,8 @@ dependencies {
     testImplementation "org.mockito:mockito-core:4.0.0"
     testImplementation "org.mockito:mockito-inline:4.0.0"
     testImplementation "org.mockito.kotlin:mockito-kotlin:4.0.0"
+
+    implementation 'com.google.mlkit:barcode-scanning:17.1.0'
+
+    implementation 'com.google.android.gms:play-services-mlkit-barcode-scanning:18.2.0'
 }
